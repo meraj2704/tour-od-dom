@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour od dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my dom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis tenetur, modi illum ea assumenda quo, molestiae suscipit magni commodi facilis iusto! Rerum molestiae et ex quaerat, esse unde neque, voluptatum, maiores accusantium id eos. Asperiores error eaque ex pariatur, ratione perspiciatis facere vitae. Et praesentium, ea assumenda, cupiditate magni amet tempora consectetur officiis minus magnam debitis ducimus. Id ratione esse inventore nam possimus asperiores a temporibus, laborum laboriosam ullam, quaerat commodi ab expedita alias accusamus beatae voluptate est! Maxime mollitia laboriosam quis necessitatibus magnam maiores cum, labore soluta eius suscipit accusamus rerum error cupiditate autem atque asperiores, deserunt officia.</p>
+    </header>
+    <main>
+        <section>
+            <h1 id="dom">My owsom dom de baba</h1>
+        <ul>
+            <li>ami ai khane </li>
+            <li>apni kothay achen</li>
+            <li>ami apnake dekhe felchi</li>
+        </ul>
+        </section>
+        <section>
+            <h1>Fruits</h1>
+            <ul>
+                <li class="dom1">appale</li>
+                <li class="dom1">Mango</li>
+                <li class="dom1">banana</li>
+            </ul>
+        </section>
+        <section id="place-container">
+            <h1>place</h1>
+            <ul id="places-list">
+                <li>chittagong</li>
+                <li>Bandorbon</li>
+                <li>sundarban</li>
+            </ul>
+
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/stylejs.js"></script>
+    <script src="js/append.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection)
+        {
+            // console.log(li.innerText);
+        }
+        // const allHeading = document.getElementsByTagName(h1);
+        // // console.log(allHeading);
+        // for(const h of allHeading)
+        // {
+        //     // console.log(h.innerText);
+        // }
+        const someLi = document.querySelectorAll('.dom1');
+        for(const li of someLi)
+        {
+            console.log(li.innerHTML);
+        }
+    </script>
+</body>
+
+</html>
